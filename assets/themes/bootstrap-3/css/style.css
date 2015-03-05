@@ -15,10 +15,10 @@
 
 /* Jekyll Bootstrap Colors */
 h1, h2, h3, h4 {
-  color: #f22430;
+  color: #959595;
 }
 #footer {
-  background-color: #fdcd60;
+  background-color: #fff;
 }
 
 
@@ -71,7 +71,7 @@ h1, h2, h3, h4 {
   font-size: 0.8em; }
 
 .tag_box a:hover {
-  background-color: #e5e5e5; }
+  background-color: #e17c00; }
 
 .tag_box a.active {
   background: #57A957;
