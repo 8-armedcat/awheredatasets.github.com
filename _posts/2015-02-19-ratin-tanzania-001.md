@@ -2,7 +2,7 @@
 layout: post
 title: "Daily Prices for Major Crops - Tanzania, 2004-2014"
 tag: [price, crop]
-category: [tanzania]
+categories: [tanzania]
 ---
 
 {% include _toc.html %}
