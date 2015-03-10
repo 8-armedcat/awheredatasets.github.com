@@ -15,7 +15,7 @@ group: navigation
 {% for category in site.categories %} 
   <h2 id="{{ country[0] }}-ref">{{ country[0] | join: "/" }}</h2>
   <ul>
-    {% assign pages_list = category[1] %}  
+    {% assign pages_list = country[1] %}  
     {% include JB/pages_list %}
   </ul>
 {% endfor %}
