@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Daily Prices for Major Crops - Tanzania, 2004-2014"
-created: February 19, 2015
-modified: February 19, 2015
+tag: [Price, Crop]
+category: [Tanzania]
 ---
 
 {% include _toc.html %}

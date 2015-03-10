@@ -1,10 +1,8 @@
 ---
 layout: post
 title: "Farmgate Price of Agricultural Products - Nigeria, 2009-2010"
-tag: [Price, Farm Gate]
+tag: [Price, Crop]
 category: [Nigeria]
-created: February 18, 2015
-modified: February 18, 2015
 ---
 
 {% include _toc.html %}
