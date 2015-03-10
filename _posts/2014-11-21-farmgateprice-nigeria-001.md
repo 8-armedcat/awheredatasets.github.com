@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Farmgate Price of Agricultural Products - Nigeria, 2009-2010"
-tag: [Price, Crop]
-category: [Nigeria]
+tag: [price, crop]
+category: [nigeria]
 ---
 
 {% include _toc.html %}
