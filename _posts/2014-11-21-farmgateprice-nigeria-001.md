@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Farmgate Price of Agricultural Products - Nigeria, 2009-2010"
+title: "Farm Gate Price of Agricultural Products - Nigeria, 2009-2010"
 tag: [price, crop]
 categories: [nigeria]
 ---
