@@ -175,10 +175,10 @@ Cleaned locations were matched to original data files using the Household ID.
 	- Strategy: Create new ID for one of the pair - Nsimire M'Mushagalusa becomes 2530 (unused ID)
 	- Other duplicates: ID 2578 (one reassigned to 2580); ID 2627 (one reassigned to 2625)
 
-| Household_ID | HH_member_ID | Respondent            | HH_Head           | Relation_HH | Mobile      | Latitude | Longitude | Altitude  | start_time_original | start_time | Interviewer_name |
-|--------------|--------------|-----------------------|-------------------|-------------|-------------|----------|-----------|-----------|---------------------|------------|------------------|
-| 2530         | 2530-2       | Nsimire M'Mushagalusa | Danane Birego     | Spouse      | 0           | -2.6     | 28.75     | 132201.00 | 28/10/2014          | 41940.00   | Arsene           |
-| 2531         | 2531-1       | bahizire muhendwa     | bahizire muhendwa | Head        | 2.43993E+11 | -2.6     | 28.75     | 103145.00 | 28/10/2014          | 41940.00   | Thithy           |
+| Household_ID | Respondent            | HH_Head           | Relation_HH | Mobile      | Latitude | Longitude | Altitude  | start_time_original | start_time | Interviewer_name |
+|--------------|-----------------------|-------------------|-------------|-------------|----------|-----------|-----------|---------------------|------------|------------------|
+| 2530         | Nsimire M'Mushagalusa | Danane Birego     | Spouse      | 0           | -2.6     | 28.75     | 132201.00 | 28/10/2014          | 41940.00   | Arsene           |
+| 2531         | bahizire muhendwa     | bahizire muhendwa | Head        | 2.43993E+11 | -2.6     | 28.75     | 103145.00 | 28/10/2014          | 41940.00   | Thithy           |
 
 
 - Create unique person ID by concatenating HH and within-household person ID
