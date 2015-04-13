@@ -171,19 +171,19 @@ Cleaned locations were matched to original data files using the Household ID.
 
 - Remove records with no locations and/or no dates
 - Remove duplicated unique IDs. There were 3 duplicated household IDs, which generally appeared similarly to the following:
+
+| Household_ID | HH_member_ID | Respondent            | HH_Head           | Relation_HH | Mobile      | Latitude | Longitude | Altitude  | start_time_original | start_time | Interviewer_name |
+|--------------|--------------|-----------------------|-------------------|-------------|-------------|----------|-----------|-----------|---------------------|------------|------------------|
+| 2531         | 2530-2       | ********************* | *************     | Spouse      | 0           | -2.6     | 28.75     | 132201.00 | 28/10/2014          | 41940.00   | Arsene           |
+| 2531         | 2531-1       | *****************     | ***************** | Head        | 2.43993E+11 | -2.6     | 28.75     | 103145.00 | 28/10/2014          | 41940.00   | Thithy           |
+
 	- These appear to be different households accidentally assigned the same ID
-	- Strategy: Create new ID for one of the pair - Nsimire M'Mushagalusa becomes 2530 (unused ID)
+	- Strategy: Create new ID for one of the pair - Case 1 becomes 2530 (unused ID)
 	- Other duplicates: ID 2578 (one reassigned to 2580); ID 2627 (one reassigned to 2625)
-
-| Household_ID | Respondent            | HH_Head           | Relation_HH | Mobile      | Latitude | Longitude | Altitude  | start_time_original | start_time | Interviewer_name |
-|--------------|-----------------------|-------------------|-------------|-------------|----------|-----------|-----------|---------------------|------------|------------------|
-| 2530         | Nsimire M'Mushagalusa | Danane Birego     | Spouse      | 0           | -2.6     | 28.75     | 132201.00 | 28/10/2014          | 41940.00   | Arsene           |
-| 2531         | bahizire muhendwa     | bahizire muhendwa | Head        | 2.43993E+11 | -2.6     | 28.75     | 103145.00 | 28/10/2014          | 41940.00   | Thithy           |
-
 
 - Create unique person ID by concatenating HH and within-household person ID
 - Match unique person ID to HH survey respondents (respondents not listed in household roster were assigned the HH head ID)
-- Remove bad characters and numbers from names and altitude columns (ex. "FRANÃ‡OISE M' SINDANI", "94927.00A")
+- Remove bad characters and numbers from names and altitude columns (ex. "****Ã‡****", "94927.00A")
 - Simplify Respondent and Household head columns (remove "Is respondent the household head" variable, fill in Relationship to household head column with "Head" value for all empty cells)
 - Relation to HH Head variable: Replace all empty cells with "Head", allows users to quickly visualize how many respondents were the HH Head and what was the distribution of non-head respondents
 
@@ -199,7 +199,7 @@ There is sometimes ambiguity in question wording that causes potential misinterp
 
 - Example: Part B, Question 9: "Own farm labour contribution (in terms of % e.g. 10%, 25%, 40%)"
 - This could mean either "percent of your labour that is spent on your own farm" or "percent of all labour on your farm performed by you"
-- Other examples of ambiguity: Part F, Question 4: "Ever used?" in reference to a particular technology. While this seems to be asking whether the person has ever used the technology, it could be interpreted as asking whether the person has ever seen the technology used in his/her community or on his/her farm.  
+- Other examples of ambiguity: Part F, Question 6: "Ever used?" in reference to a particular technology. While this seems to be asking whether the person has ever used the technology, it could be interpreted as asking whether the person has ever seen the technology used in his/her community or on his/her farm.  
 
 The questionnaire sometimes appears to mistakenly cite questions out of order. Ex. Part F, Questions 10 and 11.
 
